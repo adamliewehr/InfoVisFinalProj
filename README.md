@@ -37,7 +37,7 @@ pip install pandas tqdm ujson
 - Games must have exactly 4 players with complete data
 - All players must have at least 2 VP (starting settlements)
 - Winner (Rank 1) must have at least 10 VP
-- Typically filters out ~5-6% of games (non-4-player games or incomplete data)
+- Filters out 6-7% of games (non-4-player games or incomplete data)
 
 ## Cleaned Dataset Fields
 

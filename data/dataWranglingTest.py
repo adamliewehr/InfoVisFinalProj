@@ -116,10 +116,9 @@ def extract_player_stats(players, activity_stats, resource_stats):
             stats[f'rank{rank}_successfulTrades'] = activity.get('successfulTrades', 0)
             stats[f'rank{rank}_resourceIncomeBlocked'] = activity.get('resourceIncomeBlocked', 0)
             
-            # Resource Stats
+            # Resource Stats (goldIncome removed - not part of base game)
             resource = resource_stats.get(player_color, {})
             stats[f'rank{rank}_tradeLoss'] = resource.get('tradeLoss', 0)
-            stats[f'rank{rank}_goldIncome'] = resource.get('goldIncome', 0)
             stats[f'rank{rank}_devCardLoss'] = resource.get('devCardLoss', 0)
             stats[f'rank{rank}_robbingLoss'] = resource.get('robbingLoss', 0)
             stats[f'rank{rank}_rollingLoss'] = resource.get('rollingLoss', 0)
@@ -134,7 +133,7 @@ def extract_player_stats(players, activity_stats, resource_stats):
             # Missing player data - set all to None
             for field in ['settlements', 'cities', 'vp_cards', 'largest_army', 'longest_road', 'total_vp',
                          'devCardsUsed', 'resourcesUsed', 'devCardsBought', 'proposedTrades', 
-                         'successfulTrades', 'resourceIncomeBlocked', 'tradeLoss', 'goldIncome',
+                         'successfulTrades', 'resourceIncomeBlocked', 'tradeLoss',
                          'devCardLoss', 'robbingLoss', 'rollingLoss', 'tradeIncome', 'devCardIncome',
                          'robbingIncome', 'rollingIncome', 'totalResourceLoss', 'totalResourceScore',
                          'totalResourceIncome']:
