@@ -1,5 +1,7 @@
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
   <body>
     <h1>Catan Vis Project</h1>
     <p>
@@ -9,6 +11,28 @@
       >
       is a github repo that has all of the information. Enjoy!
     </p>
+
+    <div class="container">
+      <div class="container">
+        <div style="width: 20px; height: 20px; background-color: red"></div>
+        <div>1st Place (Winner)</div>
+      </div>
+
+      <div class="container">
+        <div style="width: 20px; height: 20px; background-color: yellow"></div>
+        <div>2nd Place</div>
+      </div>
+      <div class="container">
+        <div style="width: 20px; height: 20px; background-color: #3431de"></div>
+        <div>3rd Place</div>
+      </div>
+      <div class="container">
+        <div style="width: 20px; height: 20px; background-color: #934adc"></div>
+        <div>4th Place</div>
+      </div>
+    </div>
+    <br />
+    <div id="barChart"></div>
     <div id="svg-container"></div>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/loadData.js"></script>
@@ -16,5 +40,7 @@
     <script src="js/parallelCoordinate.js"></script>
     <script src="js/paralellCoordinateWithBrush.js"></script>
     <script src="js/brushTest.js"></script>
+    <script src="js/sharedConstants.js"></script>
+    <script src="js/bottomBarChart.js"></script>
   </body>
 </html>
