@@ -49,8 +49,8 @@ d3.csv("./data/cleaned_games.csv", d3.autoType).then((data) => {
   // Generate a random start index
   const startIndex = Math.floor(Math.random() * (maxStart + 1));
   // Get the slice
-  // const randomSlice = data.slice(startIndex, startIndex + sliceLength);
-  const randomSlice = data.slice(0, 125);
+  const randomSlice = data.slice(startIndex, startIndex + sliceLength);
+  // const randomSlice = data.slice(0, 125);
 
   // console.log(randomSlice);
 
