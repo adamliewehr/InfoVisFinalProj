@@ -12,6 +12,60 @@
       is a github repo that has all of the information. Enjoy!
     </p>
 
+    <p>
+      If you’ve ever played Catan or any board game, you’ve probably lost. After
+      the fact, you probably wondered why you lost. What did my family and
+      friends do differently to beat me? Was it luck? Do they know something I
+      don’t? Did they all secretly conspire against me? It’s probably all of the
+      above.
+    </p>
+    <p>
+      This visualization helps ease that pain, by letting you analyze what
+      players did to win.
+    </p>
+
+    <h3>Viz Information</h3>
+    <p>
+      This viz is called a parallel coordinate plot. It's a data visualization
+      technique used to plot multivariate numerical data, where each variable is
+      represented as a horizontal axis, and data points are lines connecting
+      values across these axes.
+    </p>
+    <p>
+      There is also a bar chart that will populate as you filter across the
+      axes. This bart chart shows you how many players of each rank are being
+      shown at that time.
+    </p>
+    <p>
+      Each line is a player, and the color of the line coorosponds to the place
+      they finished in the game. See the legend below.
+    </p>
+    <p>
+      Click and drag across and axis to filter out anything not in a specific
+      range of your choosing.
+    </p>
+    <p>You use this filtering on any axis, and as many axes as you want.</p>
+    <p>
+      To clear a filter, click on any part of the axis that does not include
+      your range.
+    </p>
+    <p>
+      Be careful not to make your range the entire axis, or else you will not be
+      able to clear your range.
+    </p>
+
+    <h3>Data Information</h3>
+    <p>
+      Each time this page gets reloaded, a random 125 games are chosen to be
+      represented. This means that there are 500 players on the vis at a time.
+      (This is so your browser doesn't crash)
+    </p>
+    <p>
+      Please do not refresh the page unless you want a new batch of
+      games/players.
+    </p>
+    <p>Enjoy!</p>
+
     <div class="container">
       <div class="container">
         <div style="width: 20px; height: 20px; background-color: red"></div>
@@ -34,6 +88,45 @@
     <br />
     <div id="barChart"></div>
     <div id="svg-container"></div>
+    <p>
+      This was built using
+      <a href="https://github.com/d3/d3" target="_blank">D3.js</a>
+    </p>
+    <p>
+      All the code is
+      <a href="https://github.com/adamliewehr/InfoVisFinalProj" target="_blank"
+        >here
+      </a>
+    </p>
+    <p>Dataset was removed from github for some reason :(</p>
+    <h3>Parallel Coordinates chart resources</h3>
+    <a href="https://d3-graph-gallery.com/parallel.html" target="_blank">
+      Site 1 </a
+    ><br />
+    <a href="https://observablehq.com/@d3/parallel-coordinates" target="_blank">
+      Site 2 </a
+    ><br />
+    <a
+      href="https://observablehq.com/@cengchengcc/brushable-parallel-coordinates"
+      target="_blank"
+    >
+      Site 3 </a
+    ><br />
+    <a
+      href="https://observablehq.com/@d3/brushable-parallel-coordinates"
+      target="_blank"
+    >
+      Site 4 </a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=NrbGSuR0v5Q" target="_blank">
+      Site 5 </a
+    ><br />
+    <a
+      href="https://vizhub.com/curran/parallel-coordinates-with-brushing?file=parallelCoordinates.js"
+      target="_blank"
+    >
+      Site 6 </a
+    ><br />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/loadData.js"></script>
     <script src="js/testViolin.js"></script>

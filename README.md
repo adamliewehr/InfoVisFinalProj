@@ -14,7 +14,7 @@ tar -xzf games.tar.gz
 
 # Data Processing
 
-The raw dataset contains ~44,000 JSON files with detailed game event histories. Since we only need summary statistics for visualization, we use Python to extract and clean the data.
+The raw dataset contains ~44,000 JSON files with detailed game event histories. Since we only need summary statistics for this visualization, we use Python to extract and clean the data.
 
 ## Setup Python Environment
 
